@@ -46,8 +46,8 @@ struct Animation {
         Animation(
             typeAnimate: DataManager.shared.animations.randomElement()?.rawValue ?? AnimationType.slideLeft.rawValue,
             curve: DataManager.shared.curves.randomElement()?.rawValue ?? AnimationCurve.easeIn.rawValue,
-            force: Float.random(in: 0...2),
-            duration: Float.random(in: 0...3),
+            force: Float.random(in: 1...2),
+            duration: Float.random(in: 1...3),
             delay: 0.5
         )
     }
